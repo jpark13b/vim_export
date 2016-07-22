@@ -1,5 +1,10 @@
-set t_Co=256
+" LOAD "
+execute pathogen#infect()
+filetype plugin indent on
+
+let mapleader=" "
 syntax on
+set t_Co=256
 syntax enable
 colorscheme molokai
 let g:molokai_original=1
@@ -16,4 +21,6 @@ set lazyredraw
 set showmatch		"highlight matching {} ()
 set incsearch		"search immediately as entered"
 set hlsearch		"highlight searched result"
+
+nmap <leader>n :NERDTreeToggle <CR>
 
