@@ -1,9 +1,9 @@
 " LOAD "
 execute pathogen#infect()
+syntax on
 filetype plugin indent on
 
 let mapleader=" "
-syntax on
 set t_Co=256
 syntax enable
 colorscheme molokai
