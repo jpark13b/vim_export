@@ -24,3 +24,10 @@ set hlsearch		"highlight searched result"
 
 nmap <leader>n :NERDTreeToggle <CR>
 
+" airline "
+set laststatus=2
+set ttimeoutlen=50
+let g:airline#extensions#tabline#enabled=1
+function! s:tagbar_integration()
+        "statusline tells you what function you're in"
+endfunction
