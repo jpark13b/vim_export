@@ -22,12 +22,21 @@ set showmatch		"highlight matching {} ()
 set incsearch		"search immediately as entered"
 set hlsearch		"highlight searched result"
 
+"leaders"
+nmap <leader><tab> :tabn <CR>
+nmap <leader><s-tab> :tabp <CR>
 nmap <leader>n :NERDTreeToggle <CR>
+nmap <leader>w :bd <CR>
+nmap <leader>t :tabnew <CR>
+nmap <leader>/ :noh <CR>
+
 
 " airline "
 set laststatus=2
 set ttimeoutlen=50
+let g:airline_theme='base16_monokai'
 let g:airline#extensions#tabline#enabled=1
-function! s:tagbar_integration()
-        "statusline tells you what function you're in"
-endfunction
+let g:airline_powerline_fonts=1
+let g:airline#extensions#whitespace#enabled=1
+
+
