@@ -29,7 +29,9 @@ nmap <leader>n :NERDTreeToggle <CR>
 nmap <leader>w :bd <CR>
 nmap <leader>t :tabnew <CR>
 nmap <leader>/ :noh <CR>
-
+nmap <leader>q :q <CR>
+nmap <leader>s :w <CR>
+nmap <leader>x :wq <CR>
 
 " airline "
 set laststatus=2
